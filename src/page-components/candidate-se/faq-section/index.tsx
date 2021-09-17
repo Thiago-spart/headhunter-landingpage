@@ -27,6 +27,10 @@ const socialProofs = [
     text: `No momento aceitamos apenas Pix.`,
   },
   {
+    title: `Até quando as inscrições ficam abertas??`,
+    text: `Até dia 01/10/2021, ou até fecharmos a turma de 4 alunos.`,
+  },
+  {
     title: `Porque o site é tão mal feito?`,
     text: `Como essa é nossa primeira turma oficial, nós focamos muito mais em
     estruturar um conteúdo de qualidade para formar nossos alunos, então acabou
@@ -57,7 +61,7 @@ export const FaqSection = () => (
         title="Candidate-se"
         src="https://docs.google.com/forms/d/e/1FAIpQLSdjE3Ypkq74CF1UujIOZQhConrqPzh2XGmktDEZpTyEFrf3wg/viewform?embedded=true"
         width="640"
-        height="1700"
+        height="1800"
         frameBorder="0"
         marginHeight={0}
         marginWidth={0}
