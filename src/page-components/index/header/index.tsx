@@ -8,7 +8,8 @@ const headerStyle = css`
 
 const Header = () => (
   <header className={tw(headerStyle)}>
-    <div className={tw(`max-w-6xl mx-auto py-16 px-14 sm:px-6 lg:px-8`)}>
+    <div className={tw(`max-w-6xl mx-auto py-60 px-14 sm:px-6 lg:px-8`)}>
+      {/* <div className={tw(`max-w-6xl mx-auto py-16 px-14 sm:px-6 lg:px-8`)}> */}
       <h1 className={tw(`font-sans font-bold text-4xl md:text-5xl lg:text-8xl text-center leading-snug text-gray-800`)}>
         Construa seu futuro Dream Team!
       </h1>
@@ -21,7 +22,7 @@ const Header = () => (
         <Button primary>Entre em contato</Button>
       </div>
     </div>
-    <div className={tw(`flex justify-center w-full`)}>
+    {/* <div className={tw(`flex justify-center w-full`)}>
       <div className={tw(`mt-4 w-full`)}>
         <p className={tw(`font-mono uppercase text-center font-medium text-sm text-gray-600`)}>
           Já ajudamos esssas empresas
@@ -31,7 +32,7 @@ const Header = () => (
           <img src="/images/pontaltech.svg" alt="Pontaltech" className={tw(`m-12 mb-8`)} width={300} />
         </div>
       </div>
-    </div>
+    </div> */}
   </header>
 );
 
