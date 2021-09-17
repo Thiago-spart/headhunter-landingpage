@@ -14,34 +14,26 @@ type Link = {
 
 const links = [
   {
-    label: `Features`,
-    href: `/`,
+    label: `O que nós fazemos`,
+    href: `#o-que-nos-fazemos`,
   },
   {
-    label: `Testimonials`,
-    href: `/`,
+    label: `Depoimentos`,
+    href: `#depoimentos`,
   },
   {
-    label: `Pricing`,
-    href: `/`,
+    label: `Preço`,
+    href: `#preco`,
   },
   {
     label: `Blog`,
-    href: `/`,
+    href: `https://techmmunity.com.br/`,
   },
 ];
 
 const secondaryLinks = [
   {
-    label: `Contact sales`,
-    href: `/`,
-  },
-  {
-    label: `Log in`,
-    href: `/`,
-  },
-  {
-    label: `Get Started`,
+    label: `Entre em contato`,
     href: `/`,
   },
 ];
@@ -138,9 +130,7 @@ const Navigation = () => {
           </div>
           <div className={tw(`hidden md:block`)}>
             <div className={tw(`ml-4 flex items-center md:ml-6`)}>
-              <Button modifier="border-0 mr-2">Contact sales</Button>
-              <Button modifier="border-0 mr-2">Log in</Button>
-              <Button primary>Get started</Button>
+              <Button primary>Entre em contato</Button>
             </div>
           </div>
           <div className={tw(`-mr-2 flex md:hidden`)}>
