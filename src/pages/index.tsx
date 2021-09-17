@@ -1,30 +1,29 @@
 import { NextSeo } from 'next-seo';
-import Page from '@/components/page';
-import Header from '@/components/header';
-import VideoSection from '@/components/video-section';
-import ListSection from '@/components/list-section';
-import FeatureSection from '@/components/feature-section';
-import SocialProof from '@/components/social-proof';
-import PricingTable from '@/components/pricing-table';
-import Footer from '@/components/footer';
+import Navigation from '@/components/navigation';
+import { DefaultLayout } from '@/layouts/default';
+import Header from '@/page-components/index/header';
+import VideoSection from '@/page-components/index/video-section';
+import ListSection from '@/page-components/index/list-section';
+import FeatureSection from '@/page-components/index/feature-section';
+import SocialProof from '@/page-components/index/social-proof';
+import PricingTable from '@/page-components/index/pricing-table';
 
 export default function Home() {
   return (
-    <Page>
+    <DefaultLayout>
       <NextSeo
         title="Techmmunity - Encontre talentos para seu negocio"
         description="Encontre os profissionais com o match perfeito para o seu negocio!"
       />
+      <Navigation />
       <Header />
       <main>
         <VideoSection />
         <ListSection />
         <FeatureSection />
-        {/* <CasesSection /> */}
         <SocialProof />
         <PricingTable />
       </main>
-      <Footer />
-    </Page>
+    </DefaultLayout>
   );
 }
