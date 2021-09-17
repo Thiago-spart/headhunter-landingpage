@@ -1,11 +1,7 @@
+/* eslint-disable react/style-prop-object */
 import { tw } from 'twind';
 
 const socialProofs = [
-  {
-    title: `Como faço para me candidatar?`,
-    text: `Basta preencher o formulário nesse site e aguardar nosso contato: `,
-    url: `https://forms.gle/Vy2deWjnebt6FAaW9`,
-  },
   {
     title: `Como funciona o curso?`,
     text: `O curso tem a duração de 1 a 2 meses, dependendo do progresso da
@@ -46,33 +42,75 @@ const socialProofs = [
 export const FaqSection = () => (
   <div className={tw(`container mx-auto my-8`)} id="faq">
     <div className={tw(`mb-16 text-center`)}>
+      <h4 className={tw(`text-base text-indigo-600 font-semibold tracking-wide uppercase`)}>
+        Curso FullStack Da Techmmunity
+      </h4>
+      <p className={tw(`mt-2 text-5xl lg:text-7xl font-bold tracking-tight text-gray-900`)}>Candidate-se!</p>
+    </div>
+    <div
+      style={{
+        display: `flex`,
+        justifyContent: `center`,
+      }}
+    >
+      <iframe
+        title="Candidate-se"
+        src="https://docs.google.com/forms/d/e/1FAIpQLSdjE3Ypkq74CF1UujIOZQhConrqPzh2XGmktDEZpTyEFrf3wg/viewform?embedded=true"
+        width="640"
+        height="1700"
+        frameBorder="0"
+        marginHeight={0}
+        marginWidth={0}
+      >
+        Carregando…
+      </iframe>
+    </div>
+    <div className={tw(`mb-16 text-center`)}>
       <h4 className={tw(`text-base text-indigo-600 font-semibold tracking-wide uppercase`)}>F.A.Q.</h4>
       <p className={tw(`mt-2 text-5xl lg:text-7xl font-bold tracking-tight text-gray-900`)}>Perguntas Frequentes</p>
     </div>
     <div className={tw(`max-w-7xl mx-auto`)}>
       <section>
         {socialProofs.map((socialProof) => (
-          <div className={tw(`relative bg-white`)}>
+          <div className={tw(`relative bg-white`)} key={socialProof.nro}>
             <div className={tw(`pt-10 px-6 md:px-0`)}>
               <h4 className={tw(`text-2xl lg:text-4xl font-bold tracking-tight text-gray-900`)}>
                 {`${socialProof.nro}. ${socialProof.title}`}
               </h4>
-              <p className={tw(`text-gray-600 text-base`)}>
-                {socialProof.text}
-                {socialProof.url && (
-                  <a
-                    href={socialProof.url}
-                    target="_blank"
-                    rel="noreferrer"
-                    className={tw(`text-indigo-600 underline`)}
-                  >
-                    {socialProof.url}
-                  </a>
-                )}
-              </p>
+              <p className={tw(`text-gray-600 text-base`)}>{socialProof.text}</p>
             </div>
           </div>
         ))}
+        <div className={tw(`relative bg-white`)}>
+          <div className={tw(`pt-10 px-6 md:px-0`)}>
+            <h4 className={tw(`text-2xl lg:text-4xl font-bold tracking-tight text-gray-900`)}>
+              {`${socialProofs.length}. Tenho mais duvidas, quem pode me ajudar?`}
+            </h4>
+            <p className={tw(`text-gray-600 text-base`)}>
+              Basta enviar uma mensagem para o Henrique{` `}
+              <a
+                href="https://wa.me/5511978569934"
+                target="_blank"
+                rel="noreferrer"
+                className={tw(`text-indigo-600 underline`)}
+              >
+                no Whatsapp (+5511978569934)
+              </a>
+              {` `}
+              ou
+              {` `}
+              <a
+                href="https://discord.com/channels/@me/705572674713157684"
+                target="_blank"
+                rel="noreferrer"
+                className={tw(`text-indigo-600 underline`)}
+              >
+                no Discord (razal#0894)
+              </a>
+              .
+            </p>
+          </div>
+        </div>
       </section>
     </div>
   </div>
