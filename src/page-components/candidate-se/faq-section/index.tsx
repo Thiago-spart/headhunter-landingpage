@@ -28,7 +28,7 @@ const socialProofs = [
   },
   {
     title: `Até quando as inscrições ficam abertas??`,
-    text: `Até dia 01/10/2021, ou até fecharmos a turma de 4 alunos.`,
+    text: `Até dia 24/09/2021, ou até fecharmos a turma de 4 alunos.`,
   },
   {
     title: `Porque o site é tão mal feito?`,
