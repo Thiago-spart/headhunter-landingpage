@@ -6,7 +6,7 @@ export default function Home() {
   return (
     <DefaultLayout>
       <NextSeo
-        title="Techmmunity - Candidate-se ao nosso curso!"
+        title="Candidate-se a mentoria da Techmmunity!"
         description="Agarre a chance de mudar de vida e conseguir um emprego na area dos seus sonhos!"
       />
       <main>
